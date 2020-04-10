@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Word-Beater": {
+    "Beat-It": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Word-Beater",
+            "outputPath": "dist/Beat-It",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Word-Beater:build"
+            "browserTarget": "Beat-It:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Word-Beater:build:production"
+              "browserTarget": "Beat-It:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Word-Beater:build"
+            "browserTarget": "Beat-It:build"
           }
         },
         "test": {
@@ -110,15 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Word-Beater:serve"
+            "devServerTarget": "Beat-It:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Word-Beater:serve:production"
+              "devServerTarget": "Beat-It:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "Word-Beater"
+    }
+  },
+  "defaultProject": "Beat-It",
+  "cli": {
+    "analytics": false
+  }
 }
