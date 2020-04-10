@@ -273,7 +273,6 @@ function clockHandler() {
         countdown--;
         if (countdown === 0) {
             document.getElementById("message").innerHTML = "Game Over";
-            alert("Game Over..!")
             input.blur();
             input.value = "";
             setTimeout(() => {
